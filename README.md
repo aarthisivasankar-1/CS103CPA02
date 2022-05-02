@@ -1,7 +1,7 @@
 # CS103CPA02
--Link to Heroku App:
--Link to Repository: https://github.com/aarthisivasankar-1/CS103CPA02
--Link to Zoom Movie Demonstrating Proof of Concept:
+1. Link to Heroku App:
+2. Link to Repository: https://github.com/aarthisivasankar-1/CS103CPA02
+3. Link to Zoom Movie Demonstrating Proof of Concept:
 
 For my CPA02 assignment- I have created a web app that allows users to keep track of their growing list of to do bucket list items that they want to acheive at some point in their life. 
 
