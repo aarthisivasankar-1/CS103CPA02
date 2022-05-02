@@ -1,0 +1,49 @@
+<div class="text-center">
+    <h1>The Customized Bucket List Creator </h1>
+    <h6>Welcome <%=username%>, you are now logged in!</h6>
+</div>
+   <div class="bg-light border border-primary p-3 rounded m-3">
+        <h3 class="display-4 text-center">My Bucket Item Wish List</h3>
+        <p class="lead text-center"><%= items.length %>  items planned for <%= user['username'] %> to achieve! Good luck, you can do it!</p>
+    </div>
+    <hr>
+ 
+    <ol>
+        <% for (item of items){%>
+            <li class="mb-2">         
+                <b><%=item.title%>:</b><i><%= item.description %></i><br>
+                <i>Status:</i>
+                <% if (item.completed) {%>
+                    <a href="/todo/completed/false/<%= item._id%>"> Acheived! </a>
+                <% } else {%>
+                    <a href="/todo/completed/true/<%= item._id%>"> Still in Progress </a>
+                <% } %>
+                <br>
+               <i>Item Added:</i> <%= item.createdAt %> 
+                <a href="/todo/delete/<%= item._id%>">Delete Item</a>
+            </li>
+        <% }%>
+    </ol>
+    <hr>
+    <div class="text-center">
+        <h4>Start Adding to your List Here</h4>
+    
+    <form method="post" action="/todo/add">
+        Enter Name of Item:<input type="text" name="title"><br>
+        Enter Description:<input type="text" name="description"><br>
+        Enter Location:<input type="text" name="location"><br>
+        <input type="submit" value="Add to List"><br>
+    </form>
+   </div>
+   <hr>
+   <div class="text-center">
+    <h4>Search for Specific Items Here</h4>
+    <form method="post" action="/todosearch">
+     Search for an item by title: <input type="text" name="item_name" placeholder="e.g. sky diving">
+     <input type="submit" value= "search" class="mt-5">
+    </form>
+  </div>
+  </div>
+    
+
+

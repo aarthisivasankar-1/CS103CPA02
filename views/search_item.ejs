@@ -1,0 +1,17 @@
+<body style="background-color:#ffffff;" >
+    <%if(titles.length > 0){%>
+        <%for(title of titles){%>
+        <ul>
+            <li>
+                Title: <%=title.title %> <br>
+            </li>
+        </ul>
+        <%}%>
+    <%}else{%>
+        No items found!
+    <%}%>
+
+    <div class="col">
+        <a href="/"> Back to homepage</a>
+    </div>
+</body>
