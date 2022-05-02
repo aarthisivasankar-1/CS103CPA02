@@ -1,10 +1,12 @@
+<body style="background-color:#B5C2E7;" ></body>
+<br>
 <div class="text-center">
-    <h1>The Customized Bucket List Creator </h1>
-    <h6>Welcome <%=username%>, you are now logged in!</h6>
+    <h1 style ="font-family:Rockwell; color:#4B84A1; font-size: 45px;"><b>The Customized Bucket List Creator</b></h1>
 </div>
-   <div class="bg-light border border-primary p-3 rounded m-3">
-        <h3 class="display-4 text-center">My Bucket Item Wish List</h3>
-        <p class="lead text-center"><%= items.length %>  items planned for <%= user['username'] %> to achieve! Good luck, you can do it!</p>
+   <div class="border border-primary p-3 rounded m-3" style="background-color:#B5C2E7;">
+       <br>
+        <h3 class="display-4 text-center" style="color:midnightblue; font-family:Rockwell">My Bucket Item Wish List</h3>
+        <p class="lead text-center" style="color:midnightblue; font-family:Rockwell"><%= items.length %>  items planned for <%= user['username'] %> to achieve! Good luck, you can do it!</p>
     </div>
     <hr>
  
@@ -26,7 +28,7 @@
     </ol>
     <hr>
     <div class="text-center">
-        <h4>Start Adding to your List Here</h4>
+        <h4 style="color:midnightblue; font-family:Rockwell">Start Adding to your List Here</h4>
     
     <form method="post" action="/todo/add">
         Enter Name of Item:<input type="text" name="title"><br>
@@ -36,13 +38,13 @@
     </form>
    </div>
    <hr>
-   <div class="text-center">
-    <h4>Search for Specific Items Here</h4>
+   <!-- <div class="text-center">
+    <h4 style="color:midnightblue; font-family:Rockwell">Search for Specific Items Here</h4>
     <form method="post" action="/todosearch">
      Search for an item by title: <input type="text" name="item_name" placeholder="e.g. sky diving">
      <input type="submit" value= "search" class="mt-5">
     </form>
-  </div>
+  </div> -->
   </div>
     
 

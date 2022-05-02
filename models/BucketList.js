@@ -7,7 +7,6 @@ var BucketListSchema = Schema( {
   userId: ObjectId,
   title: String,
   description:String,
-  location: String,
   completed: Boolean,
   createdAt: Date,
 } );
