@@ -5,6 +5,8 @@ Link to Zoom Movie Demonstrating Proof of Concept:
 
 For my CPA02 assignment- I have created a web app that allows users to keep track of their growing list of to do bucket list items that they want to acheive at some point in their life. 
 
+
+
 *To run and install app locally*:
 
 1. Clone the git repo to your desktop or other location
@@ -16,8 +18,9 @@ For my CPA02 assignment- I have created a web app that allows users to keep trac
 4. Go to your desired browser, and type localhost:<port number> (enter the specified port number in the app.js file) annd will bring you to the web app!
 
 
-*App Overview with Screenshots*:
 
+
+*App Overview with Screenshots*:
 
 Users can log into their account here. If they dont have an account they can create one here as well. This ensure only them having complete and safe access to their list: 
 
@@ -32,6 +35,6 @@ Scrolling down on this page, the user can find this section that allows them to 
 
 Upon clicking the add to list button, they should see their new item added to the ongrowing list of items they want to complete. Notice how the most recent added items will be towards the bottom of the list to make it easier for the user to track which items they want to complete when. Each entry includes the status of whether they have acheived the item and the date of when the item was added to the list.
 
-If the user is done with the item, they can click on the 'still in progress' button which will automatically change the status to 'acheived!':
+If the user is done with the item, they can click on the 'still in progress' button which will automatically change the status to 'acheived!'. Let's say the user already visited the Eiffel Tower in Paris, now after clicking the button, they can see 'acheived!' next to that entry:
 
-Similarly, if a user wants to delete an item of the list, they can simply hit the 'delete item' button and it will remove the item from the list:
+Similarly, if a user wants to delete an item of the list, they can simply hit the 'delete item' button and it will remove the item from the list. Let's say the user wants to remove the Visiting the Eiffel Tower in Paris entry, they can click the delete button and now they are only 4 things left for them to achive in their list:
