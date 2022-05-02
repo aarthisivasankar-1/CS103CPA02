@@ -43,4 +43,9 @@ Upon clicking the add to list button, they should see their new item added to th
 
 If the user is done with the item, they can click on the 'still in progress' button which will automatically change the status to 'acheived!'. Let's say the user already visited the Eiffel Tower in Paris, now after clicking the button, they can see 'acheived!' next to that entry:
 
+  <img width="581" alt="Screen Shot 2022-05-02 at 2 59 22 PM" src="https://user-images.githubusercontent.com/55194773/166309723-653bac4c-f16e-4373-b8bb-a3ee00597a5c.png">
+
 Similarly, if a user wants to delete an item of the list, they can simply hit the 'delete item' button and it will remove the item from the list:
+  
+  <img width="951" alt="Screen Shot 2022-05-02 at 3 00 21 PM" src="https://user-images.githubusercontent.com/55194773/166309751-ae8dd266-f0d1-4c7a-b99b-b7635b38c678.png">
+
