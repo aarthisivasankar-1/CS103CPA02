@@ -14,6 +14,7 @@ const session = require("express-session"); // to handle sessions using cookies
 const debug = require("debug")("personalapp:server"); 
 const layouts = require("express-ejs-layouts");
 const axios = require("axios")
+require('dotenv').config();
 
 // *********************************************************** //
 //  Loading models
@@ -28,6 +29,7 @@ const ToDoItem = require("./models/BucketList")
 
 const mongoose = require( 'mongoose' );
 //const mongodb_URI = 'mongodb://localhost:27017/cs103a_todo'
+//const mongodb_URI = 'mongodb+srv://asivasankar:sweetkaramcoffee@cluster0.qovrd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 const mongodb_URI = process.env.mongodb_URI
 //mongodb+srv://cs103a:<password>@cluster0.kgugl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
 
