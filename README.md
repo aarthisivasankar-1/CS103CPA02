@@ -1,4 +1,4 @@
-# CS103CPA02
+# CS103CPA02: The Bucket List Creator
 1. Link to Heroku App:
 2. Link to Repository: https://github.com/aarthisivasankar-1/CS103CPA02
 3. Link to Zoom Movie Demonstrating Proof of Concept:
