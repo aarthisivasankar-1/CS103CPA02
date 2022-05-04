@@ -1,7 +1,7 @@
 # CS103CPA02: The Bucket List Creator
 1. Link to Heroku App: https://tranquil-chamber-67511.herokuapp.com
 2. Link to Github Repository: https://github.com/aarthisivasankar-1/CS103CPA02
-3. Link to Zoom Movie Demonstrating Proof of Concept:
+3. Link to Zoom Movie Demonstrating Proof of Concept: https://brandeis.zoom.us/rec/share/Eu4-EYFvvpt-8Jx-e_1NcT3Kd3qMgX-_fZ71IdBe9fQoBG8uq_A1Bqd9lchwu1Nr.r3IKLRCa1_2rsem9
 
 For my CPA02 assignment- I have created a web app that allows users to keep track of their growing list of to do bucket list items that they want to acheive at some point in their life. 
 
