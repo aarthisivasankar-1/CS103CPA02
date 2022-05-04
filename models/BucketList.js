@@ -8,7 +8,7 @@ var BucketListSchema = Schema( {
   title: String,
   description:String,
   completed: Boolean,
-  createdAt: Date,
+  createdAt: Date
 } );
 
 module.exports = mongoose.model( 'BucketList', BucketListSchema );

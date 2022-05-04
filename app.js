@@ -14,7 +14,7 @@ const session = require("express-session"); // to handle sessions using cookies
 const debug = require("debug")("personalapp:server"); 
 const layouts = require("express-ejs-layouts");
 const axios = require("axios")
-require('dotenv').config();
+
 
 // *********************************************************** //
 //  Loading models
@@ -28,6 +28,7 @@ const ToDoItem = require("./models/BucketList")
 // *********************************************************** //
 
 const mongoose = require( 'mongoose' );
+require('dotenv').config();
 //const mongodb_URI = 'mongodb://localhost:27017/cs103a_todo'
 //const mongodb_URI = 'mongodb+srv://asivasankar:sweetkaramcoffee@cluster0.qovrd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 const mongodb_URI = process.env.mongodb_URI
@@ -134,10 +135,10 @@ app.get('/todo',
   isLoggedIn,
   async (req,res,next) => {
     try{
-      const {title,description,location} = req.body; // get title and description from the body
+      const {title,description} = req.body; // get title and description from the body
       const userId = res.locals.user._id; // get the user's id
       const createdAt = new Date(); // get the current date/time
-      let data = {title, description, location, userId, createdAt,} // create the data object
+      let data = {title, description, userId, createdAt,} // create the data object
       let item = new ToDoItem(data) // create the database object (and test the types are correct)
       await item.save() // save the todo item in the database
       res.redirect('/todo')  // go back to the todo page
@@ -206,7 +207,8 @@ app.use(function(err, req, res, next) {
 //  Starting up the server!
 // *********************************************************** //
 //Here we set the port to use between 1024 and 65535  (2^16-1)
-const port = process.env.PORT || '5000'
+//const port = process.env.PORT || '5000'
+const port = '5000';
 console.log('connecting on port '+port)
 app.set("port", port);
 
@@ -215,7 +217,8 @@ const http = require("http");
 const { redirect } = require("express/lib/response");
 const server = http.createServer(app);
 
-server.listen(port);
+//server.listen(port);
+server.listen(process.env.PORT || '5000');
 
 function onListening() {
   var addr = server.address();
